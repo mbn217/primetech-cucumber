@@ -26,7 +26,7 @@ public class Login_StepDef {
     @And("User enters {string} in the password field")
     public void user_enters_in_the_password_field(String passValue) {
         System.out.println("This is the value of pass : " + passValue);
-        WebElement pass = driver.findElement(By.xpath("//input[@id='pass']"));
+        WebElement pass = driver.findElement(By.xpath("//input[@id='password']"));
         pass.sendKeys(passValue);
 
     }
