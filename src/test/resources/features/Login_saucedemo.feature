@@ -1,6 +1,8 @@
+@saucedemo
 Feature: Login feature
   As a user I should be able to verify that login is working as expected
 
+  @smoke
   Scenario: User can login using valid username and password
     Given User is navigated to saucedemo.com
     When User enters "standard_user" in the username field

@@ -9,7 +9,6 @@ public class SettingsPage {
 
     //Constructor for the page
     public SettingsPage(){
-
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -17,6 +16,7 @@ public class SettingsPage {
 
     @FindBy(xpath = "//h3[text()='Settings']")
     public WebElement settingsLabel;
+
 
 
 

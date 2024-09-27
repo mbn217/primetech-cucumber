@@ -30,37 +30,15 @@ public class SeleniumUtils {
         actions.dragAndDrop(sourceElement, targetElement).build().perform();
     }
 
-    /**
-     * This method will send keys to an element using JavaScriptExecutor
-     * @param inputString the string that we want to send
-     * @param element the element that we want to send the string to
-     */
     public static void sendKeysUsingJavaScriptExecutor(String inputString , WebElement element){
-        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        JavascriptExecutor js  = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("arguments[0].setAttribute('value', '" + inputString +"')", element);
     }
 
-    /**
-     * This method will send keys to an element using Actions class
-     * @param element the element that we want to send the keys to
-     * @param input the string that we want to send
-     */
-    public static void sendkeysWithActionsClass(WebElement element, String input) {
+    public static void sendkeysWithActionsClass(WebElement element , String input){
         Actions actions = new Actions(Driver.getDriver());
-        actions.sendKeys(element, input).build().perform();
+        actions.sendKeys(element , input).build().perform();
     }
-
-
-
-    /**
-     * This method will click on an element using JavaScriptExecutor
-     * @param element the element that we want to click
-     */
-    public static void clickUsingJavaScriptExecutor(WebElement element){
-        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
-        js.executeScript("arguments[0].click()", element);
-    }
-
 
 
 
