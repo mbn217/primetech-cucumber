@@ -6,14 +6,14 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)//You telling junit to run the TestRunner class as a cucumber test
 @CucumberOptions(features = "src/test/resources/features/" ,
-                glue = "stepdefinitions",
+                glue = {"stepdefinitions", "hooks"},
                 plugin = {"pretty" , "html:target/primetech-report.html",
                         "json:target/primetech-report.json"},
 
                 //tags = "@smoke and @regression" will execute any feature or scenario that has both tags at the same time
                 //tags = "@smoke or @regression" // will execute any feature or scenario that has either of these two tags
                 //tags = "(@smoke) and (not @saucedemo)"
-                tags= "@crater"
+                tags= "@saucedemo"
 
 
 

@@ -9,12 +9,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import utilities.Driver;
 
 public class Login_StepDef {
-    WebDriver driver;
+    WebDriver driver = Driver.getDriver();
     @Given("User is navigated to saucedemo.com")
     public void user_is_navigated_to_saucedemo_com() {
-         driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
     }
     @When("User enters {string} in the username field")
@@ -26,7 +26,7 @@ public class Login_StepDef {
     @And("User enters {string} in the password field")
     public void user_enters_in_the_password_field(String passValue) {
         System.out.println("This is the value of pass : " + passValue);
-        WebElement pass = driver.findElement(By.xpath("//input[@id='password']"));
+        WebElement pass = driver.findElement(By.xpath("//input[@id='pass']"));
         pass.sendKeys(passValue);
 
     }
@@ -51,8 +51,6 @@ public class Login_StepDef {
 
         Assert.assertEquals(expectedProductLabel ,actualLabel );
         Assert.assertTrue(productLabelIsDisplayed);
-        driver.quit();
-
 
     }
 
