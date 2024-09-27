@@ -5,11 +5,15 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
+import java.time.Duration;
+
 public class Hooks {
 
     @Before
     public void beforeScenario(){
         System.out.println("We are running before each scenario");
+        Driver.getDriver().manage().window().maximize();
+        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
     @After
     public void afterScenario(Scenario scenario){
@@ -27,8 +31,9 @@ public class Hooks {
         System.out.println("This line will get printed before each step");
     }
     @AfterStep
-    public void afterStep(){
+    public void afterStep() throws InterruptedException {
         System.out.println("This line will get printed after each step");
+        Thread.sleep(1000);
     }
 
 

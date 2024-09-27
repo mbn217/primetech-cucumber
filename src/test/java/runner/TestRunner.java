@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
                 //tags = "@smoke and @regression" will execute any feature or scenario that has both tags at the same time
                 //tags = "@smoke or @regression" // will execute any feature or scenario that has either of these two tags
                 //tags = "(@smoke) and (not @saucedemo)"
-                tags= "@saucedemo"
+                tags= "@crater"
 
 
 
