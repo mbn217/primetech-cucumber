@@ -17,6 +17,9 @@ public class Dashboard {
     @FindBy(xpath = "//a[@href='/admin/items']")
     public WebElement itemsTab;
 
+    @FindBy(xpath = "//a[@href='/admin/invoices']")
+    public WebElement invoicesTab;
+
 
 
 

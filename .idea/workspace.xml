@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="new code">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Dashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ItemsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AddItem_StepDef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Add_Item.feature" afterDir="false" />
+    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added some workk for the first test case">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/InvoicesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ViewInvoices_StepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/View_Invoices.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Dashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/DryTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/DryTestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/UserAccess_StepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/UserAccess_StepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/SeleniumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/SeleniumUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/User_Access.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/User_Access.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -66,7 +67,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "testcases__hw",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/MohamedNheri(US)/IdeaProjects/primetech-cucumber/src/test/resources/features",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -80,10 +81,11 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pages" />
+      <recent name="stepdefinitions" />
       <recent name="runner" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Successfully add a new item">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="Feature: login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
@@ -155,9 +157,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Successfully add a new item" />
-        <item itemvalue="JUnit.DryTestRunner" />
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="JUnit.DryTestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Successfully add a new item" />
         <item itemvalue="Cucumber Java.Feature: login" />
       </list>
     </recent_temporary>
@@ -251,13 +253,22 @@
       <option name="project" value="LOCAL" />
       <updated>1727400796174</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added some workk for the first test case">
+      <option name="closed" value="true" />
+      <created>1727978609529</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1727978609529</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new changes" />
     <MESSAGE value="new code" />
-    <option name="LAST_COMMIT_MESSAGE" value="new code" />
+    <MESSAGE value="added some workk for the first test case" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some workk for the first test case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
