@@ -24,3 +24,8 @@ Feature: User Access Management
     And user clicks on login button
     Then user should see an error message "These credentials do not match our records." displayed
     And user should not be logged in
+
+
+    #This step will be used for every other scenario that needs a successful login
+    Scenario: User successfully login in
+      Given user is successfully logged in

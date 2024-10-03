@@ -24,12 +24,8 @@ public class UserAccess_StepDef {
 
     @Given("user is navigated to Crater login page")
     public void user_is_navigated_to_crater_login_page() {
-        //maximize window
-        driver.manage().window().maximize();
         //navigate to the crater app login page
         driver.get("http://crater.primetech-apps.com/login");
-        //implicit wait
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
     @When("user enters valid username and valid password")
     public void user_enters_valid_username_and_valid_password() throws InterruptedException {
@@ -81,7 +77,6 @@ public class UserAccess_StepDef {
         Assert.assertTrue(driver.getCurrentUrl().equals(loginUrl));
         Driver.closeDriver();
     }
-
 
 
 
