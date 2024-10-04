@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added extent report" />
+    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added extent report">
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AddNewInvoice_StepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Add_New_Invoices.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/InvoicesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/InvoicesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/DryTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/DryTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,20 +68,20 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "testcases__hw",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/MohamedNheri(US)/IdeaProjects/primetech-cucumber/src/test/resources",
+    "last_opened_file_path": "C:/Users/MohamedNheri(US)/IdeaProjects/primetech-cucumber/src/test/resources/features",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\MohamedNheri(US)\IdeaProjects\primetech-cucumber\src\test\resources" />
       <recent name="C:\Users\MohamedNheri(US)\IdeaProjects\primetech-cucumber\src\test\resources\features" />
+      <recent name="C:\Users\MohamedNheri(US)\IdeaProjects\primetech-cucumber\src\test\resources" />
       <recent name="$PROJECT_DIR$/src/test/java/utilities" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pages" />
       <recent name="stepdefinitions" />
+      <recent name="pages" />
       <recent name="runner" />
     </key>
   </component>
@@ -270,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728063496299</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added extent report">
+      <option name="closed" value="true" />
+      <created>1728065657111</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728065657111</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
