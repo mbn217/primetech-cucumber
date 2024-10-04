@@ -8,7 +8,7 @@ Feature: User Access Management
     Background:
     Given user is navigated to Crater login page
 
-  @smoke @regression
+  @smoke
   Scenario: User should be able to login with valid credentials
     When user enters valid username and valid password
     And user clicks on login button

@@ -9,12 +9,16 @@ import java.time.Duration;
 
 public class Hooks {
 
-    @Before
+    @Before()
     public void beforeScenario(){
         System.out.println("We are running before each scenario");
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
     }
+
+
+
     @After
     public void afterScenario(Scenario scenario){
         System.out.println("We are running after each scenario");
@@ -38,6 +42,31 @@ public class Hooks {
 
 
 
+
+
+//THis is a note code for using order as parameter in the annotation
+//    @Before(order=2)
+//    public void beforeScenario(){
+//        System.out.println("We are running before each scenario");
+//        Driver.getDriver().manage().window().maximize();
+//        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+//        System.out.println("This is running as order 1 in before method");
+//    }
+//
+//    @Before(order=1)
+//    public void beforeScenario2(){
+//        System.out.println("This is running as order 2 in before method");
+//    }
+
+
+// We can use tag inside the annotation parameter
+//    @Before("@regression")
+//    public void beforeScenario(){
+//        System.out.println("We are running before each scenario");
+//        Driver.getDriver().manage().window().maximize();
+//        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+//
+//    }
 
 
 }
