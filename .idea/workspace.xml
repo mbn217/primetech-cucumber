@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added some workk for the second test case">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/User_Access.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/User_Access.feature" afterDir="false" />
-    </list>
+    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added extent report" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -269,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727985554210</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added extent report">
+      <option name="closed" value="true" />
+      <created>1728063496299</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728063496299</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -277,7 +278,8 @@
     <MESSAGE value="new code" />
     <MESSAGE value="added some workk for the first test case" />
     <MESSAGE value="added some workk for the second test case" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some workk for the second test case" />
+    <MESSAGE value="added extent report" />
+    <option name="LAST_COMMIT_MESSAGE" value="added extent report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

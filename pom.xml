@@ -35,11 +35,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>me.jvt.cucumber</groupId>
-            <artifactId>reporting-plugin</artifactId>
-            <version>7.2.0</version>
-        </dependency>
-        <dependency>
             <groupId>tech.grasshopper</groupId>
             <artifactId>extentreports-cucumber7-adapter</artifactId>
             <version>1.14.0</version>
