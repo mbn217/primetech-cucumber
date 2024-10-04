@@ -9,7 +9,7 @@ import java.time.Duration;
 
 public class Hooks {
 
-    @Before()
+    @Before("not @demo")
     public void beforeScenario(){
         System.out.println("We are running before each scenario");
         Driver.getDriver().manage().window().maximize();
@@ -19,7 +19,7 @@ public class Hooks {
 
 
 
-    @After
+    @After("not @demo")
     public void afterScenario(Scenario scenario){
         System.out.println("We are running after each scenario");
 
@@ -30,15 +30,15 @@ public class Hooks {
 
         Driver.closeDriver();
     }
-    @BeforeStep
-    public void beforeStep(){
-        System.out.println("This line will get printed before each step");
-    }
-    @AfterStep
-    public void afterStep() throws InterruptedException {
-        System.out.println("This line will get printed after each step");
-        Thread.sleep(1000);
-    }
+//    @BeforeStep
+//    public void beforeStep(){
+//        System.out.println("This line will get printed before each step");
+//    }
+//    @AfterStep
+//    public void afterStep() throws InterruptedException {
+//        System.out.println("This line will get printed after each step");
+//        Thread.sleep(1000);
+//    }
 
 
 
