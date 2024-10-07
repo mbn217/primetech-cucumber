@@ -5,6 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
+import pages.DashboardPage;
 import pages.LoginPage;
 import utilities.Driver;
 import utilities.SeleniumUtils;
@@ -12,6 +13,7 @@ import utilities.SeleniumUtils;
 public class AddItem_StepDef {
     WebDriver driver = Driver.getDriver();
     LoginPage loginPage = new LoginPage();
+    DashboardPage dashboardPage = new DashboardPage();
 
     @Given("user is logged in successfully")
     public void user_is_logged_in_successfully() throws InterruptedException {
@@ -26,7 +28,7 @@ public class AddItem_StepDef {
     }
     @And("the user is on the item page")
     public void the_user_is_on_the_item_page() {
-
+        dashboardPage.itemsTab.click();
     }
     @When("the user clicks on the Add Item button")
     public void the_user_clicks_on_the_add_item_button() {
