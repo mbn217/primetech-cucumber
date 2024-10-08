@@ -34,11 +34,11 @@ public class Hooks {
 //    public void beforeStep(){
 //        System.out.println("This line will get printed before each step");
 //    }
-//    @AfterStep
-//    public void afterStep() throws InterruptedException {
-//        System.out.println("This line will get printed after each step");
-//        Thread.sleep(1000);
-//    }
+    @AfterStep
+    public void afterStep() throws InterruptedException {
+        System.out.println("This line will get printed after each step");
+        Thread.sleep(1000);
+    }
 
 
 

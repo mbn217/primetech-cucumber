@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="AddItem test case">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ItemsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ItemsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ItemsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/AddItem_StepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AddItem_StepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/SeleniumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/SeleniumUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
       <recent name="runner" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DryTestRunner">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="Feature: login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
@@ -112,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DryTestRunner" />
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="JUnit.DryTestRunner" />
         <item itemvalue="Cucumber Java.Feature: login" />
       </list>
     </recent_temporary>
@@ -246,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728342772176</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="AddItem test case">
+      <option name="closed" value="true" />
+      <created>1728344142435</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728344142435</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

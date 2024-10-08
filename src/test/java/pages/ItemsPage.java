@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class ItemsPage {
     //Constructor for the page
     public ItemsPage(){
@@ -12,27 +14,32 @@ public class ItemsPage {
     }
 
     //************ ELEMENTS *************
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//button[text()=' Add Item']")
     public WebElement addItemButton;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//div[@class='relative rounded-md shadow-sm font-base']/input")
     public WebElement nameInput;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//input[@id='0']")
     public WebElement priceInput;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//div[@tabindex='-1']/input")
     public WebElement unitSelect;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//textarea[@name='description']")
     public WebElement descriptionInput;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//button[text()=' Save Item']")
     public WebElement saveItemButton;
 
+    @FindBy(xpath = "//a[contains(@href,'/admin/items/')]")
+    public List<WebElement> itemsList;
 
 
-
+    /**
+     * If the tag is equal to SElECT then --> you can use Select class from selenium
+     * Select select = new Select(driver)
+     */
 
 
 }
