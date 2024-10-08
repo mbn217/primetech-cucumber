@@ -21,6 +21,30 @@ public class InvoicesPage {
     @FindBy(xpath = "//h3")
     public WebElement invoiceDetailsLabel;
 
+    @FindBy(xpath = "//button[text()=' New Invoice']")
+    public WebElement addNewInvoiceButton;
+
+    @FindBy(xpath = "//label[text()='New Customer ']")
+    public WebElement newCustomerSelect;
+
+    @FindBy(xpath = "//div[@class='flex relative rounded-md shadow-sm font-base']//input")
+    public WebElement exchangeRateInput;
+
+    @FindBy(xpath = "//table[@class='w-full']//input[@type='text']")
+    public WebElement newItemSelect;
+
+    @FindBy(xpath = "//table[@class='w-full']//input[@type='number']")
+    public WebElement quantityInput;
+
+    @FindBy(xpath = "//table[@class='w-full']//input[@type='tel']")
+    public WebElement priceInput;
+
+    @FindBy(xpath = "//button[text()=' Save Invoice']")
+    public WebElement saveInvoiceButton;
+
+
+
+
 
 
 }
