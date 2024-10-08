@@ -1,9 +1,10 @@
+@crater
 Feature: Add Item
   As a user
   I want to add an item to the list of item
   So i can see it as part of the list
 
-  Scenario:
+  Scenario: Successfully add a new item
     Given user is logged in successfully
     And the user is on the item page
     When the user clicks on the Add Item button
