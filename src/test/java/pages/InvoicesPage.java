@@ -25,13 +25,22 @@ public class InvoicesPage {
     public WebElement addNewInvoiceButton;
 
     @FindBy(xpath = "//label[text()='New Customer ']")
-    public WebElement newCustomerSelect;
+    public WebElement selectNewCustomer;
+
+    @FindBy(xpath = "//input[@icon='search']")
+    public WebElement customerInputField;
+
+    @FindBy(xpath = "//ul[@class='max-h-80 flex flex-col overflow-auto list border-t border-gray-200']/li")
+    public WebElement firstCustomerInList;
 
     @FindBy(xpath = "//div[@class='flex relative rounded-md shadow-sm font-base']//input")
     public WebElement exchangeRateInput;
 
     @FindBy(xpath = "//table[@class='w-full']//input[@type='text']")
-    public WebElement newItemSelect;
+    public WebElement selectNewItemDropdown;
+
+    @FindBy(xpath = "//ul[@class='flex flex-col p-0 m-0 list-none']/li[1]")
+    public WebElement firstItemInList;
 
     @FindBy(xpath = "//table[@class='w-full']//input[@type='number']")
     public WebElement quantityInput;
@@ -41,6 +50,7 @@ public class InvoicesPage {
 
     @FindBy(xpath = "//button[text()=' Save Invoice']")
     public WebElement saveInvoiceButton;
+
 
 
 

@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)//You telling junit to run the TestRunner class as a cucumber test
-@CucumberOptions(features = "src/test/resources/features/" ,
+@CucumberOptions(features = "src/test/resources/features/Add_New_Invoices.feature" ,
                 glue = {"stepdefinitions", "hooks"},
                 plugin = {"pretty" , "html:target/primetech-report.html",
                         "json:target/primetech-report.json",

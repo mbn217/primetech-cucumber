@@ -8,6 +8,7 @@ Feature: Add new inovice
     And the user is on the invoices page
     When the user clicks on the Add New Invoice button
     And the user selects a client from the New Customer dropdown
+    And the user select the first item
     And the user add exchange rate "23"
     And the user enters the price "4.99"
     And the user clicks on the Save Invoice button
