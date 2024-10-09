@@ -11,7 +11,7 @@ public class ConfigurationReader {
 
     //static block gets loaded first thing in the memory
     static {
-        String path = "src/test/resource/configuration.properties";
+        String path = "src/test/resources/configuration.properties";
         try {
             FileInputStream  fileInputStream = new FileInputStream(path);//loading the file
             configFile = new Properties();//we are instantiating the configFile object

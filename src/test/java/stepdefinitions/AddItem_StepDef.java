@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import pages.DashboardPage;
 import pages.ItemsPage;
 import pages.LoginPage;
+import utilities.ConfigurationReader;
 import utilities.Driver;
 import utilities.SeleniumUtils;
 
@@ -23,7 +24,7 @@ public class AddItem_StepDef {
     @Given("user is logged in successfully")
     public void user_is_logged_in_successfully() throws InterruptedException {
         //navigate to crater, login , enter user/pass/click on login
-        driver.get("http://crater.primetech-apps.com/login");
+        driver.get(ConfigurationReader.getPropertyValue("craterUrl"));
         SeleniumUtils.sendkeysWithActionsClass(loginPage.emailInput ,"entityadmin@primetechschool.com");
         Thread.sleep(2000);
         SeleniumUtils.sendkeysWithActionsClass(loginPage.passwordInput,"primetech@school");
