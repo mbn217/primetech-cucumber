@@ -51,6 +51,11 @@ public class InvoicesPage {
     @FindBy(xpath = "//button[text()=' Save Invoice']")
     public WebElement saveInvoiceButton;
 
+    @FindBy(xpath = "//h3[starts-with(text(),'INV')]")
+    public WebElement newInvoiceNumber;
+
+
+
 
 
 

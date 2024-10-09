@@ -1,15 +1,20 @@
 package stepdefinitions;
 
+import com.sun.source.tree.AssertTree;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.InvoicesPage;
 
 public class AddNewInvoice_StepDef {
     InvoicesPage invoicesPage = new InvoicesPage();
+    String firstInvoice;
     @When("the user clicks on the Add New Invoice button")
     public void the_user_clicks_on_the_add_new_invoice_button() {
+        firstInvoice = invoicesPage.firstInvoice.getText().split("-")[1]; //exp: INV-00040
+        System.out.println(firstInvoice);
         invoicesPage.addNewInvoiceButton.click();
     }
     @And("the user selects a client from the New Customer dropdown")
@@ -42,11 +47,20 @@ public class AddNewInvoice_StepDef {
     }
     @Then("the invoice should be saved and listed in the invoices list")
     public void the_invoice_should_be_saved_and_listed_in_the_invoices_list() {
+        //grab the intitial invoice number before creating new invoice , save it into variable
+        // after creating the new invoice we get the new invoice number and verify that the number is
+        // equal to old number +1
+        int firstInvoiceNumber = Integer.parseInt(firstInvoice);
+        String newInvoiceNumber = invoicesPage.newInvoiceNumber.getText().split("-")[1]; //INV-00041
+        int newInvoiceNumberInt = Integer.parseInt(newInvoiceNumber);
+
+        Assert.assertTrue(newInvoiceNumberInt > firstInvoiceNumber);
 
     }
-    @And("the invoice total should match the items and their quantities")
-    public void the_invoice_total_should_match_the_items_and_their_quantities() {
 
-    }
+//    @And("the invoice total should match the items and their quantities")
+//    public void the_invoice_total_should_match_the_items_and_their_quantities() {
+//        //todo as HW
+//    }
 
 }

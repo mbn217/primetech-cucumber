@@ -13,7 +13,7 @@ Feature: Add new inovice
     And the user enters the price "4.99"
     And the user clicks on the Save Invoice button
     Then the invoice should be saved and listed in the invoices list
-    And the invoice total should match the items and their quantities
+    #And the invoice total should match the items and their quantities
 
 
 
