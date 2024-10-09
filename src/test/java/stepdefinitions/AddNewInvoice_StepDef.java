@@ -51,9 +51,11 @@ public class AddNewInvoice_StepDef {
         // after creating the new invoice we get the new invoice number and verify that the number is
         // equal to old number +1
         int firstInvoiceNumber = Integer.parseInt(firstInvoice);
+        //grab the new invoice number and convert it to int
         String newInvoiceNumber = invoicesPage.newInvoiceNumber.getText().split("-")[1]; //INV-00041
         int newInvoiceNumberInt = Integer.parseInt(newInvoiceNumber);
 
+        //verify that the new invoice number is equal to old invoice number +1
         Assert.assertTrue(newInvoiceNumberInt > firstInvoiceNumber);
 
     }

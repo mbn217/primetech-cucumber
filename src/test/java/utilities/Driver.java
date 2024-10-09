@@ -19,20 +19,22 @@ public class Driver {
      */
 
     public static WebDriver getDriver(){
+        //Read the browser type you want to launch from properties file
         String browserType = ConfigurationReader.getPropertyValue("browserType");
 
-        if(driver == null){
+        if(driver == null){//if the driver is null, then create the driver
+            //Create the driver based on the browser type
             switch (browserType){
-                case "chrome":
+                case "chrome"://if the browser type is chrome
                     driver = new ChromeDriver(); //Instantiate only once
                     break;
-                case "firefox":
+                case "firefox"://if the browser type is firefox
                     driver = new FirefoxDriver();
                     break;
-                case "edge":
+                case "edge": //if the browser type is edge
                     driver = new EdgeDriver();
                     break;
-                case "safari":
+                case "safari": //if the browser type is safari
                     driver = new SafariDriver();
                     break;
 
