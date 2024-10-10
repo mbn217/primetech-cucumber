@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
                 glue = {"stepdefinitions", "hooks"},
                 plugin = {"pretty" , "html:target/primetech-report.html",
                         "json:target/primetech-report.json",
-                        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+                        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                "rerun:target/failed_scenarios.txt"},
 
                 //tags = "@smoke and @regression" will execute any feature or scenario that has both tags at the same time
                 //tags = "@smoke or @regression" // will execute any feature or scenario that has either of these two tags
