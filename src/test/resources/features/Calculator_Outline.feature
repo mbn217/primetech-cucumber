@@ -11,7 +11,7 @@ Feature: Calculator for Outline Example
 #    And I have entered 4 into the calculator
 #    When I press add
 #    Then the result should be 6 on the screen
-  @demo
+  @demo @calculator
   Scenario Outline: Add two numbers and get result
     Given I have entered <number1> in the calculator
     And I have entered <number2> in the calculator
