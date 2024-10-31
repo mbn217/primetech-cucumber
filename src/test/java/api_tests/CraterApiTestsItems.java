@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CraterApiTests {
+public class CraterApiTestsItems {
     /**
      * Crater documentation: https://docs.crater.financial/#api-reference
      */
