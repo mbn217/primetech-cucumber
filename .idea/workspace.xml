@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="jenkins updates">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notes to run maven tests" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/CucumberRunnerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/FailedTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="surefire plugin">
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/CraterApiTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/JavaFakerExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +30,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mbn217&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mbn217/primetech-cucumber.git&quot;,
+    &quot;accountId&quot;: &quot;d34a593a-c5d3-44f1-a2b3-3c2d1c8ea3bb&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -53,15 +58,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Cucumber Java.Feature: login.executor": "Run",
+    "Cucumber Java.Scenario: can not login with invalid credentials.executor": "Run",
     "JUnit.DryTestRunner.executor": "Run",
     "JUnit.FailedTestRunner.executor": "Run",
     "JUnit.TestRunner.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.CraterApiTests.create_an_item.executor": "Run",
+    "TestNG.CraterApiTests.executor": "Run",
+    "TestNG.CraterApiTests.loginToCraterApp.executor": "Run",
+    "TestNG.JavaFakerExample.fakerTest.executor": "Debug",
     "git-widget-placeholder": "jenkins",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mohamednheri/Desktop/primetech-workspace/primetech-cucumber/src/test/java/utilities",
+    "last_opened_file_path": "C:/Users/MohamedNheri(US)/IdeaProjects/primetech-cucumber/src/test/api_tests",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -70,6 +80,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MohamedNheri(US)\IdeaProjects\primetech-cucumber\src\test\api_tests" />
       <recent name="$PROJECT_DIR$/src/test/java/utilities" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
@@ -78,15 +89,16 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FailedTestRunner">
-    <configuration name="Feature: login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CraterApiTests">
+    <configuration name="Scenario: can not login with invalid credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
-      <option name="GLUE" value="stepdefinitions" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login_saucedemo_outline.feature" />
+      <option name="GLUE" value="stepdefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="primetech-cucumber" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: login" />
+      <option name="NAME_FILTER" value="^can not login with invalid credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^can not login with invalid credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: can not login with invalid credentials" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -98,66 +110,86 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DryTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CraterApiTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="primetech-cucumber" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runner.TestRunner" />
+          <option name="PATTERN" value="api_tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.DryTestRunner" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="api_tests" />
+      <option name="MAIN_CLASS_NAME" value="api_tests.CraterApiTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FailedTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CraterApiTests.create_an_item" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="primetech-cucumber" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runner.*" />
+          <option name="PATTERN" value="api_tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.FailedTestRunner" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="api_tests" />
+      <option name="MAIN_CLASS_NAME" value="api_tests.CraterApiTests" />
+      <option name="METHOD_NAME" value="create_an_item" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CraterApiTests.loginToCraterApp" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="primetech-cucumber" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runner.TestRunner" />
+          <option name="PATTERN" value="api_tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="api_tests" />
+      <option name="MAIN_CLASS_NAME" value="api_tests.CraterApiTests" />
+      <option name="METHOD_NAME" value="loginToCraterApp" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaFakerExample.fakerTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="primetech-cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api_tests" />
+      <option name="MAIN_CLASS_NAME" value="api_tests.JavaFakerExample" />
+      <option name="METHOD_NAME" value="fakerTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FailedTestRunner" />
-        <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="JUnit.DryTestRunner" />
-        <item itemvalue="Cucumber Java.Feature: login" />
+        <item itemvalue="TestNG.CraterApiTests" />
+        <item itemvalue="TestNG.CraterApiTests.loginToCraterApp" />
+        <item itemvalue="TestNG.CraterApiTests.create_an_item" />
+        <item itemvalue="TestNG.JavaFakerExample.fakerTest" />
+        <item itemvalue="Cucumber Java.Scenario: can not login with invalid credentials" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-3183f394aec4-96c0d24d" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -384,7 +416,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728588340274</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="surefire plugin">
+      <option name="closed" value="true" />
+      <created>1728594135640</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1728594135640</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -394,7 +434,8 @@
     <MESSAGE value="Add new invoice test case" />
     <MESSAGE value="added 3rd test case completed" />
     <MESSAGE value="jenkins updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="jenkins updates" />
+    <MESSAGE value="surefire plugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="surefire plugin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -404,6 +445,26 @@
           <url>file://$PROJECT_DIR$/src/test/java/stepdefinitions/AddNewInvoice_StepDef.java</url>
           <line>54</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/api_tests/CraterApiTests.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/api_tests/CraterApiTests.java</url>
+          <line>182</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/api_tests/CraterApiTests.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/api_tests/CraterApiTests.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="tzatziki.gherkin.step">
           <url>file://$PROJECT_DIR$/src/test/resources/features/Add_New_Invoices.feature</url>
