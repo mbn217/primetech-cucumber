@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added xml testng and pom profile">
-      <change afterPath="$PROJECT_DIR$/src/test/java/db_tests/DbTestDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added some initial code for DB testing, some utils methods and demo test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="jenkins" />
+        <entry key="$PROJECT_DIR$" value="crater-api-tests" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,7 +70,7 @@
     "TestNG.CraterApiTestsInvoices.executor": "Run",
     "TestNG.DbTestDemo.testDB.executor": "Run",
     "TestNG.JavaFakerExample.fakerTest.executor": "Debug",
-    "git-widget-placeholder": "crater-api-tests",
+    "git-widget-placeholder": "db-tests",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/MohamedNheri(US)/IdeaProjects/primetech-cucumber/src/test/api_tests",
     "project.structure.last.edited": "Project",
@@ -466,7 +461,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730478620039</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added some initial code for DB testing, some utils methods and demo test">
+      <option name="closed" value="true" />
+      <created>1730492485940</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1730492485940</updated>
+    </task>
+    <task id="LOCAL-00035" summary="added some initial code for DB testing, some utils methods and demo test">
+      <option name="closed" value="true" />
+      <created>1730492519615</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1730492519615</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,6 +492,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="new changes" />
     <MESSAGE value="new code" />
     <MESSAGE value="AddItem test case" />
@@ -491,7 +504,8 @@
     <MESSAGE value="new crater api test" />
     <MESSAGE value="new crater test using cucumber" />
     <MESSAGE value="added xml testng and pom profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="added xml testng and pom profile" />
+    <MESSAGE value="added some initial code for DB testing, some utils methods and demo test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some initial code for DB testing, some utils methods and demo test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
