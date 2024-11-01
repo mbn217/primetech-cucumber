@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="new crater api test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/ApiTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/GetListOfInvoicesApi_StepDef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api_features/GetListOfInvoicesApi.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api_tests/CraterApiTestsInvoices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_tests/CraterApiTestsInvoices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
-    </list>
+    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="new crater test using cucumber" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -448,8 +441,27 @@
       <option name="project" value="LOCAL" />
       <updated>1730406414108</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="new crater test using cucumber">
+      <option name="closed" value="true" />
+      <created>1730476719194</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1730476719194</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new changes" />
@@ -460,7 +472,8 @@
     <MESSAGE value="jenkins updates" />
     <MESSAGE value="surefire plugin" />
     <MESSAGE value="new crater api test" />
-    <option name="LAST_COMMIT_MESSAGE" value="new crater api test" />
+    <MESSAGE value="new crater test using cucumber" />
+    <option name="LAST_COMMIT_MESSAGE" value="new crater test using cucumber" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

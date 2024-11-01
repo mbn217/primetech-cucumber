@@ -12,21 +12,9 @@ import org.junit.runner.RunWith;
                         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "rerun:target/failed_scenarios.txt"},// to generate a txt file with failed scenarios
 
-                //tags = "@smoke and @regression" //will execute any feature or scenario that has both tags at the same time
-                //tags = "@smoke or @regression" // will execute any feature or scenario that has either of these two tags
-                //tags = "(@smoke) and (not @saucedemo)"
                 tags= "@api"
 
-
-
-                //strict was decommissioned from 6.0.0 but it forces the test to fail is the step is not defined in the step definition
-                //monochrome = true -- is to prettify the console output but it was deprecated in version 7.0
                 )
 public class ApiTestRunner {
 
 }
-
-
-/**
- * This class will allow us to execute and run our feature files/step definitions
- */
