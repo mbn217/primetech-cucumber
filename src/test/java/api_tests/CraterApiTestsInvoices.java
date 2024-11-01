@@ -25,6 +25,11 @@ public class CraterApiTestsInvoices {
 
     /**
      * An API Post request to login to the Crater app http://crater.primetech-apps.com/
+     * Given user is navigated to Crater login page
+     * When user enters valid username and valid password
+     * And user clicks on login button
+     * Then user should be logged in successfully
+     *
      */
     @Test
     public void loginToCraterApp(){
@@ -85,7 +90,18 @@ public class CraterApiTestsInvoices {
 
     }
 
-
+    /**
+     * An Api Get request to list all invoices
+     * Given user is logged in to the Crater app
+     * When user sends a GET request to the endpoint api/v1/invoices
+     * Then the status code should be 200
+     * And the response content type is application/json
+     * And the response body should contain a list of invoices
+     * And the response body should contain invoice ids
+     * And the response body should contain invoice names
+     * And the response body should contain invoice descriptions
+     *
+     */
     @Test(dependsOnMethods = "loginToCraterApp")
     public void list_all_invoices() {
 
@@ -114,7 +130,15 @@ public class CraterApiTestsInvoices {
     }
 
 
-
+    /**
+     * An API Get request to get a specific invoice
+     * Given user is logged in to the Crater app
+     * When user sends a GET request to the endpoint api/v1/invoices/{id}
+     * Then the status code should be 200
+     * And the response content type is application/json
+     * And the response body should contain the invoice information
+     *
+     */
     @Test(dependsOnMethods = "list_all_invoices")
     public void get_specific_invoice(){
         String endpoint = "api/v1/invoices/"+invoiceIds.get(0);
