@@ -88,7 +88,7 @@ public class DbTestDemo {
 //                    row.add(resultSet.getString(i)); // Add each column value to the row
 //                }
 //                rows.add(row); // Add the row to the outer list
-            }
+//            }
 
             //4. Process results
 
