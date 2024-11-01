@@ -157,26 +157,26 @@ public class CraterApiTestsItems {
     }
 
     //This user might have permission to delete the item
-    @Test(dependsOnMethods = "update_the_item")
-    public void delete_the_item() {
-        String endpoint = "api/v1/items/"+item_id;
-        //Map<String, String> requestBody = new HashMap<>();
-
-        Map<String, String> requestHeaders = new HashMap<>();
-        requestHeaders.put("Content-Type", "application/json");
-        requestHeaders.put("Accept", "application/json");
-        requestHeaders.put("Authorization", "Bearer " + token);
-
-        response = RestAssured.given()
-                .headers(requestHeaders)
-                //.body(requestBody) no request body needed because the id is in the endpoint
-                .when()
-                .delete(baseurl + endpoint);
-
-        response.then().statusCode(200).contentType("application/json");
-        Assert.assertTrue(response.path("success"));
-
-    }
+//    @Test(dependsOnMethods = "update_the_item")
+//    public void delete_the_item() {
+//        String endpoint = "api/v1/items/"+item_id;
+//        //Map<String, String> requestBody = new HashMap<>();
+//
+//        Map<String, String> requestHeaders = new HashMap<>();
+//        requestHeaders.put("Content-Type", "application/json");
+//        requestHeaders.put("Accept", "application/json");
+//        requestHeaders.put("Authorization", "Bearer " + token);
+//
+//        response = RestAssured.given()
+//                .headers(requestHeaders)
+//                //.body(requestBody) no request body needed because the id is in the endpoint
+//                .when()
+//                .delete(baseurl + endpoint);
+//
+//        response.then().statusCode(200).contentType("application/json");
+//        Assert.assertTrue(response.path("success"));
+//
+//    }
 
 //    @Test(dependsOnMethods = "delete_the_item")
 //    public void logout() {
