@@ -14,9 +14,9 @@ public class DbTestDemo {
     public void testDB(){
         //jdbc:mysql://hostname:port/dbname
         String url = "jdbc:mysql://stack-overflow.cfse9bqqndon.us-east-1.rds.amazonaws.com:3306/CraterDBS?useSSL=false&allowPublicKeyRetrieval=true";
-        String user = "root";
-        String password = "adminpassword";
-        String query = "select * from invoice_items where name like 'Hot %';";
+        String user = "craterdbuser";
+        String password = "ptschool2023";
+        String query = "SELECT * from items i where name like '%New%';";
         List<List<String>> rows = new ArrayList<>(); // Outer list to hold all rows
 
         //1. Create connection
@@ -59,12 +59,12 @@ public class DbTestDemo {
             ResultSetMetaData rsmd = resultSet.getMetaData();
             int columnCount = rsmd.getColumnCount();
             for (int i = 1; i <= columnCount; i++) {
-                System.out.println("Column Name: " + rsmd.getColumnName(i));
-                System.out.println("Column Type: " + rsmd.getColumnTypeName(i));
-                System.out.println("Column Display Size: " + rsmd.getColumnDisplaySize(i));
-                System.out.println("Is Nullable: " + rsmd.isNullable(i));
-                System.out.println("Is Auto Increment: " + rsmd.isAutoIncrement(i));
-                System.out.println("-----------");
+//                System.out.println("Column Name: " + rsmd.getColumnName(i));
+//                System.out.println("Column Type: " + rsmd.getColumnTypeName(i));
+//                System.out.println("Column Display Size: " + rsmd.getColumnDisplaySize(i));
+//                System.out.println("Is Nullable: " + rsmd.isNullable(i));
+//                System.out.println("Is Auto Increment: " + rsmd.isAutoIncrement(i));
+//                System.out.println("-----------");
             }
 
             /**

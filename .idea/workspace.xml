@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added some initial code for DB testing, some utils methods and demo test" />
+    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added some initial code for DB testing, some utils methods and demo test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner/DbTestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AddInvoice_AndVerifyDb_StepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/db_tests/DbTestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/db_tests/DbTestDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/add_new_invoice_db_testing.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/add_new_invoice_db_testing.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,10 +61,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Cucumber Java.Feature: login.executor": "Run",
+    "Cucumber Java.Scenario: Add new invoice.executor": "Run",
     "Cucumber Java.Scenario: Get list of users (1).executor": "Run",
     "Cucumber Java.Scenario: Get list of users.executor": "Run",
     "Cucumber Java.Scenario: can not login with invalid credentials.executor": "Run",
     "JUnit.ApiTestRunner.executor": "Run",
+    "JUnit.DbTestRunner.executor": "Run",
     "JUnit.DryTestRunner.executor": "Run",
     "JUnit.FailedTestRunner.executor": "Run",
     "JUnit.TestRunner.executor": "Run",
@@ -94,36 +104,16 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DbTestDemo.testDB">
-    <configuration name="Scenario: Get list of users (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DbTestRunner">
+    <configuration name="Scenario: Add new invoice" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GetListOfInvoicesApi.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/add_new_invoice_db_testing.feature" />
       <option name="GLUE" value="stepdefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="primetech-cucumber" />
-      <option name="NAME_FILTER" value="^Get list of users$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Get list of users$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Get list of users" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Get list of users" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GetListOfUsersApi.feature" />
-      <option name="GLUE" value="hooks" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="primetech-cucumber" />
-      <option name="NAME_FILTER" value="^Get list of users$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Get list of users$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Get list of users" />
+      <option name="NAME_FILTER" value="^Add new invoice$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Add new invoice$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add new invoice" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -150,6 +140,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DbTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="primetech-cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.DbTestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/MohamedNheri(US)/IdeaProjects/primetech-cucumber/api-testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="primetech-cucumber" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/api-testng.xml" />
@@ -164,7 +169,7 @@
       <module name="primetech-cucumber" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="db_tests.*" />
+          <option name="PATTERN" value="stepdefinitions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DbTestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Add new invoice" />
         <item itemvalue="TestNG.DbTestDemo.testDB" />
         <item itemvalue="TestNG.C:/Users/MohamedNheri(US)/IdeaProjects/primetech-cucumber/api-testng.xml" />
         <item itemvalue="JUnit.ApiTestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Get list of users (1)" />
-        <item itemvalue="Cucumber Java.Scenario: Get list of users" />
       </list>
     </recent_temporary>
   </component>
@@ -477,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730492519615</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="added some initial code for DB testing, some utils methods and demo test">
+      <option name="closed" value="true" />
+      <created>1730493785823</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1730493785823</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,9 +1,11 @@
+@db-test
 Feature: Add new invoice
 
     Scenario: Add new invoice
-      Given I'm logged in successfully
+      Given user is logged in successfully
       And the user is on the invoices page
       When the user clicks on the Add New Invoice button
+     #And the user enter an invoice number
       And the user selects a client from the New Customer dropdown
       And the user select the first item
       And the user add exchange rate "23"
