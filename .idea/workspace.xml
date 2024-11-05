@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="Add new invoice test case">
-      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIInvoices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIInvoices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIInvoices.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.CraterAPIInvoices.executor": "Run",
+    "TestNG.CraterAPIInvoices.get_specific_Invoice.executor": "Run",
     "TestNG.CraterAPIItems.create_an_Item.executor": "Run",
     "TestNG.CraterAPIItems.executor": "Debug",
     "TestNG.CraterAPIItems.loginToCraterApp.executor": "Run",
@@ -76,6 +78,24 @@
       <option name="PACKAGE_NAME" value="api_tests" />
       <option name="MAIN_CLASS_NAME" value="api_tests.CraterAPIInvoices" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CraterAPIInvoices.get_specific_Invoice" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="primetech-cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api_tests" />
+      <option name="MAIN_CLASS_NAME" value="api_tests.CraterAPIInvoices" />
+      <option name="METHOD_NAME" value="get_specific_Invoice" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -135,31 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaFakerExampleDemo.javaFakerExample" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="primetech-cucumber" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api_tests" />
-      <option name="MAIN_CLASS_NAME" value="api_tests.JavaFakerExampleDemo" />
-      <option name="METHOD_NAME" value="javaFakerExample" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CraterAPIInvoices" />
+        <item itemvalue="TestNG.CraterAPIInvoices.get_specific_Invoice" />
         <item itemvalue="TestNG.CraterAPIItems" />
         <item itemvalue="TestNG.CraterAPIItems.loginToCraterApp" />
         <item itemvalue="TestNG.CraterAPIItems.create_an_Item" />
-        <item itemvalue="TestNG.JavaFakerExampleDemo.javaFakerExample" />
       </list>
     </recent_temporary>
   </component>
@@ -443,7 +445,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730772235452</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Add new invoice test case">
+      <option name="closed" value="true" />
+      <created>1730772863890</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1730772863890</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
