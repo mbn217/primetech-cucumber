@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="Add new invoice test case">
-      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/JavaFakerExampleDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/SeleniumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/SeleniumUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIItems.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.CraterAPIItems.create_an_Item.executor": "Run",
+    "TestNG.CraterAPIItems.executor": "Run",
     "TestNG.CraterAPIItems.loginToCraterApp.executor": "Run",
+    "TestNG.JavaFakerExampleDemo.javaFakerExample.executor": "Run",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/mohamednheri/Desktop/primetech-workspace/primetech-cucumber/src/test/java/utilities",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -64,41 +66,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CraterAPIItems.loginToCraterApp">
-    <configuration name="Feature: login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
-      <option name="GLUE" value="stepdefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="primetech-cucumber" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: login" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DryTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="primetech-cucumber" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.DryTestRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.CraterAPIItems">
     <configuration name="FailedTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="primetech-cucumber" />
       <extension name="coverage">
@@ -114,17 +82,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CraterAPIItems" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="primetech-cucumber" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runner.*" />
+          <option name="PATTERN" value="api_tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="api_tests" />
+      <option name="MAIN_CLASS_NAME" value="api_tests.CraterAPIItems" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CraterAPIItems.create_an_Item" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="primetech-cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api_tests" />
+      <option name="MAIN_CLASS_NAME" value="api_tests.CraterAPIItems" />
+      <option name="METHOD_NAME" value="create_an_Item" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,13 +135,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JavaFakerExampleDemo.javaFakerExample" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="primetech-cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api_tests" />
+      <option name="MAIN_CLASS_NAME" value="api_tests.JavaFakerExampleDemo" />
+      <option name="METHOD_NAME" value="javaFakerExample" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CraterAPIItems" />
         <item itemvalue="TestNG.CraterAPIItems.loginToCraterApp" />
+        <item itemvalue="TestNG.CraterAPIItems.create_an_Item" />
+        <item itemvalue="TestNG.JavaFakerExampleDemo.javaFakerExample" />
         <item itemvalue="JUnit.FailedTestRunner" />
-        <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="JUnit.DryTestRunner" />
-        <item itemvalue="Cucumber Java.Feature: login" />
       </list>
     </recent_temporary>
   </component>
@@ -405,7 +411,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728610045682</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Add new invoice test case">
+      <option name="closed" value="true" />
+      <created>1730766434805</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1730766434805</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
