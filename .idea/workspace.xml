@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="Add new invoice test case">
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Calculator_Outline.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Calculator_Outline.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/SeleniumUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/SeleniumUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +48,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.CraterAPIItems.loginToCraterApp.executor": "Run",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mohamednheri/Desktop/primetech-workspace/primetech-cucumber/src/test/java/utilities"
+    "last_opened_file_path": "/Users/mohamednheri/Desktop/primetech-workspace/primetech-cucumber/src/test/java/utilities",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -61,7 +64,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FailedTestRunner">
+  <component name="RunManager" selected="TestNG.CraterAPIItems.loginToCraterApp">
     <configuration name="Feature: login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
@@ -126,8 +129,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CraterAPIItems.loginToCraterApp" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="primetech-cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api_tests" />
+      <option name="MAIN_CLASS_NAME" value="api_tests.CraterAPIItems" />
+      <option name="METHOD_NAME" value="loginToCraterApp" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CraterAPIItems.loginToCraterApp" />
         <item itemvalue="JUnit.FailedTestRunner" />
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="JUnit.DryTestRunner" />
@@ -375,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728604115234</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Add new invoice test case">
+      <option name="closed" value="true" />
+      <created>1728610045682</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1728610045682</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
