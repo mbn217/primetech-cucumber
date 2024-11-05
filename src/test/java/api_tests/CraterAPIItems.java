@@ -14,6 +14,7 @@ public class CraterAPIItems {
     String baseUrl = "http://crater.primetech-apps.com/";
     Response response;
     String token;
+    int item_id;
 
     @Test
     public void loginToCraterApp(){
@@ -76,10 +77,49 @@ public class CraterAPIItems {
                 .post(baseUrl+endpoint);
 
         response.then().statusCode(200);
-        response.prettyPrint();
+        //response.prettyPrint();
+        item_id = response.path("data.id");
+        System.out.println("The item id that was created is --> "+ item_id);
 
 
     }
+
+    @Test(dependsOnMethods = "create_an_Item")
+    public void update_an_Item(){
+        Faker faker = new Faker();
+        String endpoint = "api/v1/items/" + item_id;
+        System.out.println("Entire endpoint is " + baseUrl+endpoint);
+
+
+        String itemName = faker.commerce().productName(); //this is required
+        String itemDescription = faker.commerce().material();
+        int itemPrice = new Random().nextInt(100-10)+100; //this is required
+        System.out.println("The Description will be updated to : " + itemDescription);
+
+        Map<String, Object> requestHeaders = new HashMap<>();
+        requestHeaders.put("Content-Type", "application/json");
+        requestHeaders.put("Accept", "application/json");
+        requestHeaders.put("Authorization", "Bearer " + token);
+
+        //We can use Maps for the requestBody
+        Map<String, Object> requestBody = new HashMap<>();
+        requestBody.put("name", itemName);
+        requestBody.put("price", itemPrice);
+        requestBody.put("description", itemDescription);
+
+        response = RestAssured.given()
+                .headers(requestHeaders)
+                .body(requestBody)
+                .when()
+                .put(baseUrl+endpoint);
+
+        response.then().statusCode(200);
+
+
+
+    }
+
+
 
 
 }
