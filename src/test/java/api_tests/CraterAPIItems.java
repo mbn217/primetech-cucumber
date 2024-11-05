@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 public class CraterAPIItems {
 
@@ -52,7 +53,7 @@ public class CraterAPIItems {
         String endpoint ="api/v1/items";
         String itemName = faker.commerce().productName();
         String itemDescription = faker.commerce().material();
-        String itemPrice = faker.commerce().price();
+        int itemPrice = new Random().nextInt(100-10)+100;
         System.out.println("The body of the request: " + itemName + " || " + itemDescription + " || " + itemPrice);
         System.out.println("Here is the token -->" + token);
 
