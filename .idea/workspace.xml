@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="Add new invoice test case">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIInvoices.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +44,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.CraterAPIInvoices.executor": "Run",
     "TestNG.CraterAPIItems.create_an_Item.executor": "Run",
-    "TestNG.CraterAPIItems.executor": "Run",
+    "TestNG.CraterAPIItems.executor": "Debug",
     "TestNG.CraterAPIItems.loginToCraterApp.executor": "Run",
     "TestNG.JavaFakerExampleDemo.javaFakerExample.executor": "Run",
     "kotlin-language-version-configured": "true",
@@ -64,18 +64,20 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CraterAPIItems">
-    <configuration name="FailedTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CraterAPIInvoices">
+    <configuration name="CraterAPIInvoices" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="primetech-cucumber" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runner.*" />
+          <option name="PATTERN" value="api_tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.FailedTestRunner" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="api_tests" />
+      <option name="MAIN_CLASS_NAME" value="api_tests.CraterAPIInvoices" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CraterAPIInvoices" />
         <item itemvalue="TestNG.CraterAPIItems" />
         <item itemvalue="TestNG.CraterAPIItems.loginToCraterApp" />
         <item itemvalue="TestNG.CraterAPIItems.create_an_Item" />
         <item itemvalue="TestNG.JavaFakerExampleDemo.javaFakerExample" />
-        <item itemvalue="JUnit.FailedTestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -433,7 +435,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730769308441</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Add new invoice test case">
+      <option name="closed" value="true" />
+      <created>1730772235452</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1730772235452</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -464,8 +474,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/api_tests/CraterAPIItems.java</url>
-          <line>91</line>
-          <option name="timeStamp" value="16" />
+          <line>109</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="tzatziki.gherkin.step">
           <url>file://$PROJECT_DIR$/src/test/resources/features/Add_New_Invoices.feature</url>
