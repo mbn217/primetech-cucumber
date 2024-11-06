@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="Add new invoice test case">
+      <change afterPath="$PROJECT_DIR$/APITestNG.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner/APITestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api_features/GetListOfInvoices_Api.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIInvoices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIInvoices.java" afterDir="false" />
     </list>
@@ -39,12 +42,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Cucumber Java.Feature: login.executor": "Run",
+    "JUnit.APITestRunner.executor": "Run",
     "JUnit.DryTestRunner.executor": "Run",
     "JUnit.FailedTestRunner.executor": "Run",
     "JUnit.TestRunner.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG./Users/mohamednheri/Desktop/primetech-workspace/primetech-cucumber/APITestNG.xml.executor": "Run",
     "TestNG.CraterAPIInvoices.executor": "Run",
     "TestNG.CraterAPIInvoices.get_specific_Invoice.executor": "Run",
     "TestNG.CraterAPIItems.create_an_Item.executor": "Run",
@@ -66,7 +71,22 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CraterAPIInvoices">
+  <component name="RunManager" selected="JUnit.APITestRunner">
+    <configuration name="APITestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="primetech-cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.APITestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CraterAPIInvoices" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="primetech-cucumber" />
       <extension name="coverage">
@@ -119,36 +139,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CraterAPIItems.create_an_Item" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/mohamednheri/Desktop/primetech-workspace/primetech-cucumber/APITestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="primetech-cucumber" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api_tests" />
-      <option name="MAIN_CLASS_NAME" value="api_tests.CraterAPIItems" />
-      <option name="METHOD_NAME" value="create_an_Item" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CraterAPIItems.loginToCraterApp" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="primetech-cucumber" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api_tests" />
-      <option name="MAIN_CLASS_NAME" value="api_tests.CraterAPIItems" />
-      <option name="METHOD_NAME" value="loginToCraterApp" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/APITestNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -157,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.APITestRunner" />
+        <item itemvalue="TestNG./Users/mohamednheri/Desktop/primetech-workspace/primetech-cucumber/APITestNG.xml" />
         <item itemvalue="TestNG.CraterAPIInvoices" />
         <item itemvalue="TestNG.CraterAPIInvoices.get_specific_Invoice" />
         <item itemvalue="TestNG.CraterAPIItems" />
-        <item itemvalue="TestNG.CraterAPIItems.loginToCraterApp" />
-        <item itemvalue="TestNG.CraterAPIItems.create_an_Item" />
       </list>
     </recent_temporary>
   </component>
@@ -453,7 +447,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730772863890</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Add new invoice test case">
+      <option name="closed" value="true" />
+      <created>1730774337829</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1730774337829</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

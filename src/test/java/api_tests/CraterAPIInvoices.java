@@ -71,6 +71,13 @@ public class CraterAPIInvoices {
 
     @Test(dependsOnMethods = "get_all_Invoices")
     public void get_specific_Invoice(){
+        /**
+         * User makes a request GET to api/v1/invoices/
+         * Then a list of all the invoices should be returned
+         * Verify that Status code should be 200
+         * Verify content-type --> Application/json
+         * Verify that a list of Ids are returned
+         */
         String endpoint = "api/v1/invoices/" +invoiceIds.get(0);
         System.out.println("Full endpoint is " + baseUrl+endpoint);
 
@@ -86,7 +93,6 @@ public class CraterAPIInvoices {
                 .get(baseUrl+endpoint);
 
         response.then().statusCode(200);
-
         response.prettyPrint();
 
 
