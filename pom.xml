@@ -112,11 +112,9 @@
                         <version>3.2.5</version>
                         <configuration>
                             <testFailureIgnore>true</testFailureIgnore>
-
                                 <suiteXmlFiles>
                                     <suiteXmlFile>APITestNG.xml</suiteXmlFile>
                                 </suiteXmlFiles>
-
                         </configuration>
                     </plugin>
                 </plugins>
