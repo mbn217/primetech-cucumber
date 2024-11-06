@@ -112,9 +112,11 @@
                         <version>3.2.5</version>
                         <configuration>
                             <testFailureIgnore>true</testFailureIgnore>
-                            <includes>
-                                <include>**/APITestRunner.java</include>
-                            </includes>
+
+                                <suiteXmlFiles>
+                                    <suiteXmlFile>APITestNG.xml</suiteXmlFile>
+                                </suiteXmlFiles>
+
                         </configuration>
                     </plugin>
                 </plugins>
