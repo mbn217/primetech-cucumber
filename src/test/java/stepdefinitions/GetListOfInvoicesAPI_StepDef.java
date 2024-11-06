@@ -61,6 +61,9 @@ public class GetListOfInvoicesAPI_StepDef {
     @And("I should get list of invoices")
     public void i_should_get_list_of_invoices() {
         List<String> listOfIds = response.jsonPath().getList("data.id");
+        List<String> listOfIdsUsingPath = response.path("data.id");
+        System.out.println("Using path " + listOfIdsUsingPath);
+        System.out.println("Using jsonPath " + listOfIds);
         Assert.assertTrue(!listOfIds.isEmpty());
     }
 

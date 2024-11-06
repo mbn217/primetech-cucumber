@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="Add new invoice test case">
-      <change afterPath="$PROJECT_DIR$/APITestNG.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/APITestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api_features/GetListOfInvoices_Api.feature" afterDir="false" />
+    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIInvoices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_tests/CraterAPIInvoices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/APITestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/APITestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/GetListOfInvoicesAPI_StepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/GetListOfInvoicesAPI_StepDef.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -455,7 +453,39 @@
       <option name="project" value="LOCAL" />
       <updated>1730774337829</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="added api">
+      <option name="closed" value="true" />
+      <created>1730852018650</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1730852018650</updated>
+    </task>
+    <task id="LOCAL-00037" summary="added api">
+      <option name="closed" value="true" />
+      <created>1730852220961</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1730852220961</updated>
+    </task>
+    <task id="LOCAL-00038" summary="added api">
+      <option name="closed" value="true" />
+      <created>1730852890290</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1730852890290</updated>
+    </task>
+    <task id="LOCAL-00039" summary="added api">
+      <option name="closed" value="true" />
+      <created>1730853166361</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1730853166361</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -463,7 +493,8 @@
     <MESSAGE value="new code" />
     <MESSAGE value="AddItem test case" />
     <MESSAGE value="Add new invoice test case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new invoice test case" />
+    <MESSAGE value="added api" />
+    <option name="LAST_COMMIT_MESSAGE" value="added api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

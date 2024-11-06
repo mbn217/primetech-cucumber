@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
                         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                 "rerun:target/failed_scenarios.txt"},
 
-                tags= "@api",
-                dryRun = true
+                tags= "@api"
+                //dryRun = true
 
 
                  )
