@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added api">
+      <change afterPath="$PROJECT_DIR$/src/test/java/db_tests/DbTestDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/APITestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/APITestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/GetListOfInvoicesAPI_StepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/GetListOfInvoicesAPI_StepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,7 @@
     "TestNG.CraterAPIItems.create_an_Item.executor": "Run",
     "TestNG.CraterAPIItems.executor": "Debug",
     "TestNG.CraterAPIItems.loginToCraterApp.executor": "Run",
+    "TestNG.DbTestDemo.testDB.executor": "Run",
     "TestNG.JavaFakerExampleDemo.javaFakerExample.executor": "Run",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/mohamednheri/Desktop/primetech-workspace/primetech-cucumber/src/test/java/utilities",
@@ -69,7 +70,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.APITestRunner">
+  <component name="RunManager" selected="TestNG.DbTestDemo.testDB">
     <configuration name="APITestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="primetech-cucumber" />
       <extension name="coverage">
@@ -120,17 +121,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CraterAPIItems" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DbTestDemo.testDB" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="primetech-cucumber" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api_tests.*" />
+          <option name="PATTERN" value="db_tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="api_tests" />
-      <option name="MAIN_CLASS_NAME" value="api_tests.CraterAPIItems" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="db_tests" />
+      <option name="MAIN_CLASS_NAME" value="db_tests.DbTestDemo" />
+      <option name="METHOD_NAME" value="testDB" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -149,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DbTestDemo.testDB" />
         <item itemvalue="JUnit.APITestRunner" />
         <item itemvalue="TestNG./Users/mohamednheri/Desktop/primetech-workspace/primetech-cucumber/APITestNG.xml" />
         <item itemvalue="TestNG.CraterAPIInvoices" />
         <item itemvalue="TestNG.CraterAPIInvoices.get_specific_Invoice" />
-        <item itemvalue="TestNG.CraterAPIItems" />
       </list>
     </recent_temporary>
   </component>
@@ -485,7 +487,31 @@
       <option name="project" value="LOCAL" />
       <updated>1730853166361</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="added api">
+      <option name="closed" value="true" />
+      <created>1730854365132</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1730854365132</updated>
+    </task>
+    <task id="LOCAL-00041" summary="added api">
+      <option name="closed" value="true" />
+      <created>1730854781758</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1730854781758</updated>
+    </task>
+    <task id="LOCAL-00042" summary="added api">
+      <option name="closed" value="true" />
+      <created>1730854804456</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1730854804456</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
