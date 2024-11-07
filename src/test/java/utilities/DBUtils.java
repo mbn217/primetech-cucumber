@@ -15,7 +15,7 @@ public class DBUtils {
     }
 
     // General method to execute any query that doesn't return a result (insert, update, delete)
-    private static void executeUpdate(String query) {
+    private static void executeQuery(String query) {
         try (Connection connection = getConnection();
              Statement statement = connection.createStatement()) {
             statement.executeUpdate(query);
@@ -47,17 +47,17 @@ public class DBUtils {
 
     // Insert record method
     public static void insertRecord(String insertQuery) {
-        executeUpdate(insertQuery);
+        executeQuery(insertQuery);
     }
 
     // Update record method
     public static void updateRecord(String updateQuery) {
-        executeUpdate(updateQuery);
+        executeQuery(updateQuery);
     }
 
     // Delete record method
     public  static void deleteRecord(String deleteQuery) {
-        executeUpdate(deleteQuery);
+        executeQuery(deleteQuery);
     }
 
 }
