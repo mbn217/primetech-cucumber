@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added some initial code for DB testing, some utils methods and demo test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/DbTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AddInvoice_AndVerifyDb_StepDef.java" afterDir="false" />
+    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="finished end-to-end test case for db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/db_tests/DbTestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/db_tests/DbTestDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/add_new_invoice_db_testing.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/add_new_invoice_db_testing.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +68,6 @@
     "JUnit.TestRunner.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.C:/Users/MohamedNheri(US)/IdeaProjects/primetech-cucumber/api-testng.xml.executor": "Run",
     "TestNG.CraterApiTests.create_an_item.executor": "Run",
     "TestNG.CraterApiTests.executor": "Run",
@@ -104,7 +99,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DbTestRunner">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="Scenario: Add new invoice" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/add_new_invoice_db_testing.feature" />
@@ -125,21 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="primetech-cucumber" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.ApiTestRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DbTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="primetech-cucumber" />
       <extension name="coverage">
@@ -150,6 +130,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="runner" />
       <option name="MAIN_CLASS_NAME" value="runner.DbTestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="primetech-cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="JUnit.DbTestRunner" />
         <item itemvalue="Cucumber Java.Scenario: Add new invoice" />
         <item itemvalue="TestNG.DbTestDemo.testDB" />
         <item itemvalue="TestNG.C:/Users/MohamedNheri(US)/IdeaProjects/primetech-cucumber/api-testng.xml" />
-        <item itemvalue="JUnit.ApiTestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -490,7 +485,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730493785823</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="finished end-to-end test case for db">
+      <option name="closed" value="true" />
+      <created>1730755588805</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1730755588805</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -518,7 +521,8 @@
     <MESSAGE value="new crater test using cucumber" />
     <MESSAGE value="added xml testng and pom profile" />
     <MESSAGE value="added some initial code for DB testing, some utils methods and demo test" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some initial code for DB testing, some utils methods and demo test" />
+    <MESSAGE value="finished end-to-end test case for db" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished end-to-end test case for db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
