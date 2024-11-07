@@ -70,6 +70,8 @@ public class DbTestDemo {
             }
 
             System.out.println(data);
+
+            //close all connections
             resultSet.close();
             statement.close();
             connection.close();
