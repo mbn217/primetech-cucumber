@@ -3,19 +3,20 @@ package db_tests;
 import com.sun.mail.util.LineInputStream;
 import org.apache.poi.xwpf.usermodel.LineSpacingRule;
 import org.testng.annotations.Test;
+import utilities.DBUtils;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class DbTestDemo {
-
+    String query = "select * from CraterDBS.invoices order by invoice_number desc;";
     @Test
     public void testDB(){
         String dbUrl = "jdbc:mysql://stack-overflow.cfse9bqqndon.us-east-1.rds.amazonaws.com/CraterDBS";
         String userName = "craterdbuser";
         String password = "ptschool2023";
-        String query = "select * from CraterDBS.invoices order by invoice_number desc;";
+
         //1. Create a connection
         try {
             /**
@@ -43,6 +44,7 @@ public class DbTestDemo {
              *
              */
             ResultSet resultSet = statement.executeQuery(query);
+
             ResultSetMetaData rsmd = resultSet.getMetaData();
             int colCount = rsmd.getColumnCount();
             for (int i = 1; i <colCount ; i++) {
@@ -83,6 +85,18 @@ public class DbTestDemo {
         }
 
 
+    }
+
+
+    @Test
+    public void testDemoWithDBUtils(){
+        DBUtils.executeQuery(query);
+
+        System.out.println("---------");
+        DBUtils.selectRecord(query);
+
+        System.out.println("---------");
+        DBUtils.selectRecord(query, "invoice_number");
     }
 
 
