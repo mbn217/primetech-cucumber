@@ -80,8 +80,8 @@ public class DBUtils {
 
 
     //Will select the first record and return back the data for that specific column
-    public  static List<String> selectRecord(String query, String colName){
-        List<String> dataSet = new ArrayList<>();
+    public  static String selectRecord(String query, String colName){
+        String  dataSet  = null;
         try {
 
             Connection connection = getConnection();
@@ -90,7 +90,7 @@ public class DBUtils {
             ResultSetMetaData rsmd = resultSet.getMetaData();
             int colCount = rsmd.getColumnCount();
             if(resultSet.next()){
-                dataSet.add(resultSet.getString(colName));
+                dataSet = resultSet.getString(colName);
             }
             System.out.println(dataSet);
             //close all connections

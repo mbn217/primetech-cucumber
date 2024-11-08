@@ -11,10 +11,6 @@ import org.junit.runner.RunWith;
                         "json:target/primetech-report.json"},
         dryRun = true
 
-
-
-                //strict was decommissioned from 7.0.0 but it forces the test to fail is the step is not defined in the step definition
-                //monochrome = true -- is to prettify the console output
                 )
 public class DryTestRunner {
 
