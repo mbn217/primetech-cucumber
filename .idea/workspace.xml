@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="added DB util class">
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AddItem_And_Veirfy_DB_StepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Add_New_Item_DB_Verification.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,8 +156,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="TestNG.DbTestDemo.testDemoWithDBUtils" />
         <item itemvalue="JUnit.DryTestRunner" />
+        <item itemvalue="TestNG.DbTestDemo.testDemoWithDBUtils" />
         <item itemvalue="TestNG.DbTestDemo.testDB" />
         <item itemvalue="JUnit.APITestRunner" />
       </list>
@@ -545,7 +547,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731026289083</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="added DB util class">
+      <option name="closed" value="true" />
+      <created>1731026747996</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1731026747996</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
