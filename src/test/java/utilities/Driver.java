@@ -6,7 +6,13 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Driver {
 
@@ -51,6 +57,27 @@ public class Driver {
                     FirefoxOptions firefoxOptions = new FirefoxOptions();
                     firefoxOptions.addArguments("--headless");
                     driver = new FirefoxDriver(firefoxOptions);
+                    break;
+
+                case "sauce-labs":
+                    ChromeOptions browserOptions = new ChromeOptions();
+                    browserOptions.setPlatformName("Windows 11");
+                    browserOptions.setBrowserVersion("latest");
+                    Map<String, Object> sauceOptions = new HashMap<>();
+                    sauceOptions.put("username", "oauth-nherimohamed-5376a");
+                    sauceOptions.put("accessKey", "PUT Your Own ACCESS KEY");
+                    sauceOptions.put("build", "selenium-build-RF1F7");
+                    sauceOptions.put("name", "PrimeTech-Test");
+                    browserOptions.setCapability("sauce:options", sauceOptions);
+
+                    // start the session
+                    URL url = null;
+                    try {
+                        url = new URL("https://ondemand.us-west-1.saucelabs.com:443/wd/hub");
+                    } catch (MalformedURLException e) {
+                        throw new RuntimeException(e);
+                    }
+                    driver = new RemoteWebDriver(url, browserOptions);
                     break;
                 default:
                     driver = new ChromeDriver(); //Instantiate only once
