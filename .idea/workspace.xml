@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="finished end-to-end test case for db">
+    <list default="true" id="d8c56243-57c7-4538-90a0-3c5527fb18fb" name="Changes" comment="saucelabs example">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configuration.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="crater-api-tests" />
+        <entry key="$PROJECT_DIR$" value="db-tests" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,36 +52,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Feature: login.executor": "Run",
-    "Cucumber Java.Scenario: Add new invoice.executor": "Run",
-    "Cucumber Java.Scenario: Get list of users (1).executor": "Run",
-    "Cucumber Java.Scenario: Get list of users.executor": "Run",
-    "Cucumber Java.Scenario: can not login with invalid credentials.executor": "Run",
-    "JUnit.ApiTestRunner.executor": "Run",
-    "JUnit.DbTestRunner.executor": "Run",
-    "JUnit.DryTestRunner.executor": "Run",
-    "JUnit.FailedTestRunner.executor": "Run",
-    "JUnit.TestRunner.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.C:/Users/MohamedNheri(US)/IdeaProjects/primetech-cucumber/api-testng.xml.executor": "Run",
-    "TestNG.CraterApiTests.create_an_item.executor": "Run",
-    "TestNG.CraterApiTests.executor": "Run",
-    "TestNG.CraterApiTests.loginToCraterApp.executor": "Run",
-    "TestNG.CraterApiTestsInvoices.executor": "Run",
-    "TestNG.DbTestDemo.testDB.executor": "Run",
-    "TestNG.JavaFakerExample.fakerTest.executor": "Debug",
-    "git-widget-placeholder": "db-tests",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/MohamedNheri(US)/IdeaProjects/primetech-cucumber/src/test/api_tests",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: login.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Add new invoice.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Get list of users (1).executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Get list of users.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: can not login with invalid credentials.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ApiTestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DbTestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DryTestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FailedTestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Users/MohamedNheri(US)/IdeaProjects/primetech-cucumber/api-testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CraterApiTests.create_an_item.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CraterApiTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CraterApiTests.loginToCraterApp.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CraterApiTestsInvoices.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.DbTestDemo.testDB.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.JavaFakerExample.fakerTest.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sauce-labs-demo&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MohamedNheri(US)/Downloads/github-activity-generator-main/github-activity-generator-main/fake-repo&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\MohamedNheri(US)\IdeaProjects\primetech-cucumber\src\test\api_tests" />

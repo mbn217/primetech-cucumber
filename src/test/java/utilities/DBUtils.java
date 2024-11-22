@@ -9,12 +9,24 @@ public class DBUtils {
     private static final String USERNAME = ConfigurationReader.getPropertyValue("dbusername");
     private static final String PASSWORD = ConfigurationReader.getPropertyValue("dbpassword");
 
-    // Method to create and return a database connection
+
+
+    /**
+     * Create and return a database connection
+     * @return a connection object
+     * @throws SQLException if the connection fails
+     */
     private static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(DB_HOSTNAME, USERNAME, PASSWORD);
     }
 
-    // General method to execute any query that doesn't return a result (insert, update, delete)
+
+    /**
+     * Execute any query that doesn't return a result (insert, update, delete)
+     * This method is used to execute insert, update, delete queries
+     * Only use this method when you don't expect a result back from the query
+     * @param query the query to execute
+     */
     private static void executeUpdate(String query) {
         try (Connection connection = getConnection();
              Statement statement = connection.createStatement()) {
@@ -25,7 +37,14 @@ public class DBUtils {
         }
     }
 
-    // Select query method that returns the first record as a List of strings
+
+    /**
+     * Select query that will return the first record as a list of strings
+     * If your query returns multiple records, only the first record will be returned
+     * If your query has multiple columns, all columns will be returned as a list of strings
+     * @param query the query to execute
+     * @return a list of strings representing the first record
+     */
     public static List<String> selectRecord(String query) {
         List<String> list = new ArrayList<>();
         try (Connection connection = getConnection();
@@ -45,17 +64,27 @@ public class DBUtils {
         return list;
     }
 
-    // Insert record method
+
+    /**
+     * Select the first record and return back the data for that specific column
+     * @param insertQuery the query to execute
+     */
     public static void insertRecord(String insertQuery) {
         executeUpdate(insertQuery);
     }
 
-    // Update record method
+    /**
+     * Update record method
+     * @param updateQuery the query to execute
+     */
     public static void updateRecord(String updateQuery) {
         executeUpdate(updateQuery);
     }
 
-    // Delete record method
+    /**
+     * Delete record method
+     * @param deleteQuery the query to execute
+     */
     public  static void deleteRecord(String deleteQuery) {
         executeUpdate(deleteQuery);
     }
