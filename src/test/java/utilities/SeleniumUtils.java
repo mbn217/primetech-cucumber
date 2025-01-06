@@ -1,11 +1,13 @@
 package utilities;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SeleniumUtils {
@@ -77,6 +79,16 @@ public class SeleniumUtils {
         }
         //if the item is not in the table
         return  false;
+    }
+
+
+    public List<String> getAllRecordsFromTable(List<WebElement> listOfTableDataElements){
+        List<String> records = new ArrayList<>();
+        List<WebElement> listOfRecordsInTable = listOfTableDataElements;
+        for (WebElement element : listOfRecordsInTable){
+            records.add(element.getText());
+        }
+        return records;
     }
 
 
