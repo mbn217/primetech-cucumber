@@ -1,16 +1,21 @@
 package hooks;
 
 import io.cucumber.java.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import pages.DashboardPage;
 import utilities.Driver;
 
 import java.time.Duration;
 
 public class Hooks {
+    private static final Logger logger = LogManager.getLogger(DashboardPage.class);
 
     @Before("not @demo and not @api")
     public void beforeScenario(){
+        logger.info("beforeScenario: We are running before each scenario");
         System.out.println("We are running before each scenario");
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -21,6 +26,7 @@ public class Hooks {
 
     @After("not @demo and not @api")
     public void afterScenario(Scenario scenario){
+        logger.info("afterScenario: We are running after each scenario");
         System.out.println("We are running after each scenario");
 
         if(scenario.isFailed()){
